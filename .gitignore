@@ -70,13 +70,19 @@ web_modules/
 .env.*
 !.env.example
 
-# parcel-bundler cache (https://parceljs.org/)
+# parcel-bundler cache (https://parceljs.com/)
 .cache
 .parcel-cache
 
 # Next.js build output
-.next
-out
+.next 
+# AVISO IMPORTANTE para GitHub Pages: 
+# La carpeta 'out' CONTIENE los archivos estáticos que DEBES subir.
+# Si estás subiendo la carpeta 'out' al repositorio (Opción A), 
+# BORRA la línea 'out' de aquí. Si usas 'gh-pages' (Opción B), puedes dejarla.
+# Por lo general, se recomienda BORRAR 'out' si usas el método de despliegue principal.
+# (Mantendré el estado actual de tu archivo por si usas la rama gh-pages)
+out 
 
 # Nuxt.js build / generate output
 .nuxt
