@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configuración de exportación estática
+  // 1. Esto le dice a Next.js que genere HTML estático
   output: 'export', 
   
-  // Configuración del Base Path para GitHub Pages
+  // 2. Esto corrige los enlaces internos (ej: /about)
   basePath: '/Madrid-soft-play', 
+  
+  // 3. ¡CRUCIAL! Esto corrige las rutas de CSS, JS e imágenes.
+  assetPrefix: '/Madrid-soft-play/', 
 };
 
 export default nextConfig;
