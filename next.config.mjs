@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+  // Configuración de exportación estática
+  output: 'export', 
+  
+  // Configuración del Base Path para GitHub Pages
+  basePath: '/Madrid-soft-play', 
+};
 
-export default nextConfig
+export default nextConfig;
